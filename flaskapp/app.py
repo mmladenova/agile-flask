@@ -15,8 +15,8 @@ from flaskapp.forms import ProductForm, LoginForm
 
 app = Flask(__name__)
 
-app.config['MONGO_DBNAME'] = environ.get('DB_NAME')
-app.config['MONGO_URI'] = environ.get('MONGO_URI')
+app.config['MONGO_DBNAME'] = environ.get('DATABASE_URL')
+app.config['MONGO_URI'] = environ.get('MONGODB_URI')
 app.config['SECRET_KEY'] = environ.get('SECRET_KEY')
 app.config['SESSION_PROTECTION'] = 'strong'
 
