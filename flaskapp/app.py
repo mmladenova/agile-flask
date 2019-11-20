@@ -107,16 +107,17 @@ def product_detail(product_id):
 def product_edit(product_id):
     product = mongo.db.products.find_one({"_id": ObjectId(product_id)})
     form = ProductForm(request.form, obj=product)
-    # form.name.data = product['name']
-    # form.description.data = product['description']
-    # form.price.data = product['price']
 
     if request.method == 'POST' and form.validate():
         mongo.db.products.replace_one({"_id": ObjectId(product_id)}, form.data)
-        print(form.data)
         return redirect(url_for('product_detail', product_id=product_id))
+
+    form.description.default = product['description']
+    form.price.default = product['price']
+    form.name.default = product['name']
+    form.process()
     # Either first load or validation error at this point.
-    return render_template('product/edit.html', form=form, edit=True, product=product)
+    return render_template('product/edit.html', form=form, product=product)
     # return 'Form to edit product #.'.format(product_id)
 
 

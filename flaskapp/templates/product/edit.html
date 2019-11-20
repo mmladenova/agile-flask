@@ -2,7 +2,7 @@
 
 {% from 'product/common.html' import edit_field %}
 
-{% if edit %}
+{% if product %}
 {% set title = 'Edit Product' %}
 {% else %}
 {% set title = 'Add Product' %}
@@ -16,16 +16,13 @@
   <form method="post" class="form-horizontal">
     <legend>{{ product.name }}</legend>
     {{ edit_field(form.name, maxlength=255, class="span3",
-    value=product.name,
       placeholder="Product name") }}
     {{ edit_field(form.description, rows="5", class="span5",
-      value=product.description,
       placeholder="Product description.") }}
     {{ edit_field(form.price, class="span3",
-       value=product.price,
       placeholder="0.01") }}
     <div class="form-actions">
-        {% if edit %}
+        {% if product %}
             <button type="submit" class="btn">Edit</button>
             or <a href="{{ url_for('product_detail', product_id=product._id) }}">Cancel</a>
         {% else %}
