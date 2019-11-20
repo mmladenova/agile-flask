@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6e497968-2193-48fd-b2ca-cd83d76c6b2c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskapp/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapp/Procfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskapp/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
+              <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -75,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -131,10 +131,10 @@
         <option value="$PROJECT_DIR$/flaskapp/models.py" />
         <option value="$PROJECT_DIR$/flaskapp/forms.py" />
         <option value="$PROJECT_DIR$/flaskapp/templates/user/login.html" />
-        <option value="$PROJECT_DIR$/flaskapp/Procfile" />
         <option value="$PROJECT_DIR$/flaskapp/templates/base.html" />
         <option value="$PROJECT_DIR$/flaskapp/app.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/flaskapp/Procfile" />
       </list>
     </option>
   </component>
@@ -233,7 +233,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574194431863</updated>
-      <workItem from="1574194433481" duration="8463000" />
+      <workItem from="1574194433481" duration="8638000" />
     </task>
     <task id="LOCAL-00001" summary="add procfile">
       <created>1574244313470</created>
@@ -249,11 +249,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574244741872</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add gunicorn in requirements">
+      <created>1574244978425</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574244978425</updated>
+    </task>
+    <task id="LOCAL-00004" summary="changed procfile">
+      <created>1574245051188</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1574245051188</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8463000" />
+    <option name="totallyTimeSpent" value="8638000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -288,7 +302,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add procfile" />
     <MESSAGE value="change names of config vars" />
-    <option name="LAST_COMMIT_MESSAGE" value="change names of config vars" />
+    <MESSAGE value="add gunicorn in requirements" />
+    <MESSAGE value="changed procfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed procfile" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/flaskapp/config.py">
@@ -355,13 +371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskapp/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flaskapp/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -383,6 +392,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskapp/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
         </state>
       </provider>
     </entry>
