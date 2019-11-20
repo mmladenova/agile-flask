@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% from 'product/common.html' import edit_field %}
+
+{% if edit %}
+{% set title = 'Edit Product' %}
+{% else %}
+{% set title = 'Add Product' %}
+{% endif %}
+
+{% block title %}{{ title }}{% endblock title %}
+
+{% block main %}
+<div class="row">
+  <div class="product-edit well offset2 span8">
+  <form method="post" class="form-horizontal">
+    <legend>{{ product.name }}</legend>
+    {{ edit_field(form.name, maxlength=255, class="span3",
+    value=product.name,
+      placeholder="Product name") }}
+    {{ edit_field(form.description, rows="5", class="span5",
+      value=product.description,
+      placeholder="Product description.") }}
+    {{ edit_field(form.price, class="span3",
+       value=product.price,
+      placeholder="0.01") }}
+    <div class="form-actions">
+        {% if edit %}
+            <button type="submit" class="btn">Edit</button>
+            or <a href="{{ url_for('product_detail', product_id=product._id) }}">Cancel</a>
+        {% else %}
+            <button type="submit" class="btn">Save</button>
+            or <a href="{{ url_for('products_list') }}">Cancel</a>
+        {% endif %}
+    </div>
+  </form>
+  </div>
+</div>
+{% endblock main %}
